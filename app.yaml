@@ -1,0 +1,17 @@
+application: henningandhenning
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+# Static directories
+  - url: /image
+    static_dir: image/
+
+  - url: /style
+    static_dir: style
+
+  - url: .*
+    script: handler.py
+
