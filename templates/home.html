@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="wrap">
+				<div id="leftcolumn">
+					<h3>An eye for detail</h3>
+    				<p>
+    				    We are an independant opticians located in the centre of Weybridge, Surrey, with over 10 years of experience. Improving vision is our passion.
+    				</p>
+    				<p>
+    				    Ensuring that our patients are given the best service possible is our priority by using cutting edge optometrical technologies and offering a friendly, personal service. 
+    				</p>
+    				<p>
+    				    Optometry is what we believe in, diligently. We would do anything for it. Anything. Eyes - their amazing. 
+    				</p>
+				</div>
+				<div id="rightcolumn">
+                        <div id="slider" class="nivoSlider">
+                            <img src="image/slide_1.jpg" alt="" title="#htmlcaption1"/>
+                            <img src="image/slide_2.jpg" alt="" title="#htmlcaption2"/>
+                            <img src="image/slide_3.jpg" alt="" title="#htmlcaption3" />
+                        </div>
+                        <div id="htmlcaption1" class="nivo-html-caption">
+                            <strong>Located in Webridge town centre</strong> a proudly independant practise.
+                        </div>
+                        <div id="htmlcaption2" class="nivo-html-caption">
+                            <strong>A family business</strong> we offer eye tests for all ages: kids, adults, seniors.
+                        </div>
+                        <div id="htmlcaption3" class="nivo-html-caption">
+                            <strong>At the cutting edge</strong> our service includes the use of the latest technologies in optometry.
+                        </div>
+                    <script type="text/javascript" src="script/jquery.js"></script>
+                    <script type="text/javascript" src="script/jquery.nivo.slider.pack.js"></script>
+                    <script type="text/javascript">
+                        $(window).load(function() {
+                            $('#slider').nivoSlider();
+                        });
+                    </script>
+			    </div>
+</div>
+
+{% endblock %}

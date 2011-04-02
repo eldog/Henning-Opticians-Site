@@ -5,7 +5,7 @@
    <title>jQuery demo</title>
    
    <!-- Usually in the <head> section -->
-    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 
 
@@ -14,27 +14,22 @@
         <a href="http://dev7studios.com" id="dev7link" title="Go to dev7studios">dev7studios</a>
 
         <div id="slider-wrapper">
-        
-            <div id="slider" class="nivoSlider">
-                <img src="image/gucci.jpg" alt="" />
-                <a href="http://dev7studios.com"><img src="image/guess.jpg" alt="" title="This is an example of a caption" /></a>
-                <img src="image/kids_bit.jpg" alt="" />
-                <img src="image/mpod.jpg" alt="" title="#htmlcaption" />
-            </div>
-            <div id="htmlcaption" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-            </div>
-        
-        </div>
-
-    </div>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
+                        <div id="slider" class="nivoSlider">
+                            <img src="image/slide_1.jpg" alt=""/>
+                            <img src="image/slide_2.jpg" alt="" />
+                            <img src="image/.jpg" alt="" title="#htmlcaption" />
+                        </div>
+                        <div id="htmlcaption" class="nivo-html-caption">
+                        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+                        </div>
+               </div>
+                    <script type="text/javascript" src="script/jquery.js"></script>
+                    <script type="text/javascript" src="script/jquery.nivo.slider.pack.js"></script>
+                    <script type="text/javascript">
+                        $(window).load(function() {
+                            $('#slider').nivoSlider();
+                        });
+                    </script>
 
  </body>
  </html>

@@ -6,11 +6,18 @@ api_version: 1
 handlers:
 
 # Static directories
+  - url: /favicon.ico
+    static_files: image/favicon.ico
+    upload: image/favicon.ico
+      
   - url: /image
     static_dir: image/
 
   - url: /style
     static_dir: style
+
+  - url: /script
+    static_dir: script  
 
   - url: .*
     script: handler.py

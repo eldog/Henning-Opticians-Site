@@ -58,7 +58,7 @@ aside, nav, article, figure {
 body {
 	font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	color:#2d3536;
-	background:#e8e0c0 url(images/background.png) repeat;
+	background:#e8e0c0 url(../images/background.png) repeat;
     text-shadow:0 1px 0 #fff;
 }
 
@@ -76,7 +76,7 @@ a:hover, a:active {
     position:absolute;
     top:0;
     left:50px;
-    background:url(images/dev7logo.png) no-repeat;
+    background:url(../images/dev7logo.png) no-repeat;
     width:60px;
     height:67px;
     border:0;
@@ -88,7 +88,7 @@ a:hover, a:active {
 /*=== Custom Slider Styles ===*/
 /*============================*/
 #slider-wrapper {
-    background:url(images/slider.png) no-repeat;
+    background:url(../images/slider.png) no-repeat;
     width:998px;
     height:392px;
     margin:0 auto;
@@ -101,7 +101,7 @@ a:hover, a:active {
     width:618px;
     height:246px;
     margin-left:190px;
-	background:url(images/loading.gif) no-repeat 50% 50%;
+	background:url(../images/loading.gif) no-repeat 50% 50%;
 }
 #slider img {
 	position:absolute;
@@ -123,7 +123,7 @@ a:hover, a:active {
 	display:block;
 	width:22px;
 	height:22px;
-	background:url(images/bullets.png) no-repeat;
+	background:url(../images/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -137,7 +137,7 @@ a:hover, a:active {
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(images/arrows.png) no-repeat;
+	background:url(../images/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }

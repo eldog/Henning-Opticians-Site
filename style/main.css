@@ -1,4 +1,6 @@
-﻿body {
+﻿
+
+body {
     background-color: #215a6d;
 	color: #333;
 	font: small/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -78,12 +80,13 @@ p {
 	font-family: "Baskerville", "Palatino", "Georgia", serif;
 	font-style: italic;
 	font-weight: normal;
-	font-size: 1.6em;
+	font-size: 1.2em;
 	margin-right:10px;
 	margin-top: 15px;
 	padding: 5px;
 	text-shadow: 0px -1px 1px rgba(0,0,0,0.1);
 	text-align:left;
+	
     }
 
 #header-right address
@@ -248,21 +251,12 @@ p {
 /*============================*/
 /*=== Custom Slider Styles ===*/
 /*============================*/
-#slider-wrapper {
-    background:url(images/slider.png) no-repeat;
-    width:998px;
-    height:392px;
-    margin:0 auto;
-    padding-top:74px;
-    margin-top:50px;
-}
-
 #slider {
 	position:relative;
-    width:618px;
-    height:246px;
-    margin-left:190px;
-	background:url(images/loading.gif) no-repeat 50% 50%;
+    width:513px;
+    height:246usix;
+	background:url(../image/loading.gif) no-repeat 50% 50%;
+	margin-bottom: 42px;
 }
 #slider img {
 	position:absolute;
@@ -277,14 +271,14 @@ p {
 
 .nivo-controlNav {
 	position:absolute;
-	left:260px;
+	left:230px;
 	bottom:-42px;
 }
 .nivo-controlNav a {
 	display:block;
 	width:22px;
 	height:22px;
-	background:url(images/bullets.png) no-repeat;
+	background:url(../image/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -298,7 +292,7 @@ p {
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(images/arrows.png) no-repeat;
+	background:url(../image/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }

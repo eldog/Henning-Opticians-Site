@@ -14,41 +14,45 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import os
 import cgi
 import datetime
 import wsgiref.handlers
 
-from google.appengine.ext import db
-from google.appengine.api import users
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import RequestHandler, template
 
-class Greeting(db.Model):
-  author = db.UserProperty()
-  content = db.StringProperty(multiline=True)
-  date = db.DateTimeProperty(auto_now_add=True)
 
+import utils
 
-class MainPage(RequestHandler):
+get_path = utils.path_getter(__file__)
+
+class BaseHandler(RequestHandler):
+    
+    def render_template(self, template_name, template_dict=None):
+        if template_dict is None:
+            template_dict = {}
+        template_path = get_path(
+            os.path.join('templates', '%s.html' % template_name))
+        self.response.out.write(
+            template.render(template_path, template_dict))
+
+class HomePage(BaseHandler):
   def get(self):
-    self.response.out.write(template.render("index.html", []))
+    self.render_template('home')
+    
+class LocationPage(BaseHandler):
+  def get(self):
+    self.render_template('location')
 
-
-class Guestbook(RequestHandler):
-  def post(self):
-    greeting = Greeting()
-
-    if users.get_current_user():
-      greeting.author = users.get_current_user()
-
-    greeting.content = self.request.get('content')
-    greeting.put()
-    self.redirect('/')
-
+class PractisePage(BaseHandler):
+  def get(self):
+    self.render_template('practise')
 
 application = webapp.WSGIApplication([
-  ('/', MainPage),
-  ('/sign', Guestbook)
+  ('/', HomePage),
+  ('/location', LocationPage),
+  ('/practise', PractisePage)
 ], debug=True)
 
 
