@@ -71,21 +71,21 @@ p {
 
 #header-right {
     float: left;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
-#header-slogan h1{
+#header-slogan {
     float: right;
     color: white;
 	font-family: "Baskerville", "Palatino", "Georgia", serif;
 	font-style: italic;
 	font-weight: normal;
-	font-size: 1.2em;
+	font-size: 1em;
 	margin-right:10px;
 	margin-top: 15px;
 	padding: 5px;
 	text-shadow: 0px -1px 1px rgba(0,0,0,0.1);
-	text-align:left;
+	text-align:right;
 	
     }
 
@@ -95,7 +95,7 @@ p {
 	font-family: "Baskerville", "Palatino", "Georgia", serif;
 	font-style: italic;
 	font-weight: normal;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	padding-right:10px;
 	text-shadow: 0px -1px 1px rgba(0,0,0,0.1);
 	text-align:left;
@@ -130,7 +130,7 @@ p {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
     text-align: justify;
-    margin-right: 22px;
+    margin-right: 6px;
 }
 
 #navbar a:hover {
@@ -140,7 +140,7 @@ p {
 
 #navbar .wrap {
 }
-
+/**main*/
 #main {
 	border-top: solid 3px #baad8b;
 	color: rgb(0,0,0);
@@ -151,13 +151,34 @@ p {
 	padding: 23px 0;
 }
 
+#home #main h2 {
+    font-size: 1.3em;
+    
+	font-weight: normal;
+    }
+
 #home #main h3 {
+    font-size: 1.1em;
 	margin-bottom: 1em;
 }
 
 #main h3 {
 	color: rgba(0,0,0,0.7);
 	font-weight: normal;
+}
+
+.col-1 {
+    float:left;
+    width:33%;
+    margin-left: 6px;
+}
+.col-2 {
+    float:left;
+    width:33%;
+}
+.col-3 {
+    float:left;
+    width:33%;
 }
 
 #leftcolumn {

@@ -37,6 +37,22 @@ class BaseHandler(RequestHandler):
         self.response.out.write(
             template.render(template_path, template_dict))
 
+class AboutUsPage(BaseHandler):
+  def get(self):
+    self.render_template('about_us')
+
+class ContactLensPage(BaseHandler):
+  def get(self):
+    self.render_template('contact_lens')
+    
+class EyeTestPage(BaseHandler):
+  def get(self):
+    self.render_template('eye_test')
+    
+class GlassesPage(BaseHandler):
+  def get(self):
+    self.render_template('glasses')
+    
 class HomePage(BaseHandler):
   def get(self):
     self.render_template('home')
@@ -48,11 +64,26 @@ class LocationPage(BaseHandler):
 class PractisePage(BaseHandler):
   def get(self):
     self.render_template('practise')
+    
+class SpecialistEquiptmentPage(BaseHandler):
+  def get(self):
+    self.render_template('specialist_equiptment')
+    
+class WindowDisplaysPage(BaseHandler):
+  def get(self):
+    self.render_template('window_displays')
+    
 
 application = webapp.WSGIApplication([
   ('/', HomePage),
-  ('/location', LocationPage),
-  ('/practise', PractisePage)
+  ('/location',                 LocationPage),
+  ('/practise',                 PractisePage),
+  ('/eye_test',                 EyeTestPage),
+  ('/contact_lens',             ContactLensPage),
+  ('/specialist_equiptment',    SpecialistEquiptmentPage),
+  ('/about_us',                 AboutUsPage),
+  ('/glasses',                  GlassesPage),
+  ('/window_displays',          WindowDisplaysPage),
 ], debug=True)
 
 
